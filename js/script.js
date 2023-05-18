@@ -65,9 +65,9 @@ createApp({
         axios.post(this.apiUrl,data,{
           headers:{'Content-Type':'multipart/form-data'}
         }).then(result => {
-          this.newTask = ''
-          this.tasks = result.data
-          console.log(result.data)
+          this.newTask = '';
+          this.tasks = result.data;
+          console.log(result.data);
         })
 
       },

@@ -55,10 +55,10 @@
           <li
           v-for="(task,i) in tasks"
           
-          @click="task.done = !task.done"
+          
           >
 
-            <span :class="{'done' : task.done}">{{i+1+" ) "}}{{task.text}}</span>
+            <span >{{i+1+" ) "}}{{task.text}}</span>
             <i 
             class="fa-solid fa-trash"
             @click.stop="remove(i)"
