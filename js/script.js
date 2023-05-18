@@ -5,6 +5,7 @@ createApp({
   
   data(){
     return{
+      apiUrl:'server.php',
       tasks:[
 
       ],
@@ -14,6 +15,16 @@ createApp({
     },
   
     methods:{
+
+      getApi(){
+        axios.get(this.apiUrl)
+        .then(result => {
+          console.log(result.data)
+          
+          this.tasks = result.data
+        })
+      },
+
       remove(i){
         if (this.tasks[i].done) {
           this.tasks.splice(i,1)
@@ -39,5 +50,6 @@ createApp({
     },
 
     mounted(){
+      this.getApi()
     }
 }).mount('#app')
