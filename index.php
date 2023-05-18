@@ -14,7 +14,8 @@
   <link rel="stylesheet" href="css/style.css">
   <!-- link vue -->
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
-
+  <!-- link axios -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js' integrity='sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ==' crossorigin='anonymous'></script>
   <title>Vue To Do List</title>
   </head>
 
